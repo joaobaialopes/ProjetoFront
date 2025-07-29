@@ -1,0 +1,15 @@
+<main>
+<button mat-raised-button (click)="navigateToClienteCreate()" color="primary">
+    Novo Cliente
+</button>
+
+<input
+    type="text"
+    [(ngModel)]="searchTerm"
+    (input)="filterClientes()"
+    placeholder="Buscar cliente..."
+    class = "pesquisa"
+  />
+
+<app-cliente-read [clientes]="filteredClientes"></app-cliente-read>
+</main>

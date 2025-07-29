@@ -1,0 +1,64 @@
+/* Estilo da barra lateral */
+.sidenav {
+    background-color: #db9150; /* Fundo marrom */
+    width: 200px; /* Largura fixa */
+    height: 100%;
+    top: 60px; /* logo abaixo do header */
+    position: fixed; /* ou absolute */
+    z-index: 50;
+}
+
+/* Estilo dos links na barra lateral */
+.sidenav a {
+    color: #fff; /* Texto branco */
+}
+
+.home {
+    margin-top: 64px;
+}
+
+
+.home:hover{
+    background-color: #38281b; /* Leve alteração na cor de fundo */
+    font-size: 16px; /* Define o tamanho da fonte do texto do botão */
+    
+    height: 60px; /* Define a altura do botão */
+    width: 100%; /* Largura total */
+    transition: all 0.3s ease; /* Suaviza as mudanças de estilo */
+}
+span {
+    color:white;
+}
+/* Espaçamento entre ícones e texto nos links */
+.sidenav i {
+    padding-right: 10px;
+}
+
+/* Estilo do conteúdo principal */
+.content {
+    position: relative;
+    margin-top: 64px; /*64px do Header */
+    background: transparent;
+    z-index: 0;
+    margin-bottom: 65px;
+    overflow: hidden;
+}
+
+/* Cor padrão dos ícones */
+.material-icons {
+    color: white; /* branco */
+}
+/* Efeito de brilho ao passar o mouse */
+.sidenav a:not(.home):hover 
+   {
+    background-color: #d4b296; /* Leve alteração na cor de fundo */
+    font-size: 16px; /* Define o tamanho da fonte do texto do botão */
+    border-radius: 5px; /* Define bordas arredondadas */ 
+    height: 60px; /* Define a altura do botão */
+    width: 100%; /* Largura total */
+    transition: all 0.3s ease; /* Suaviza as mudanças de estilo */
+}
+
+.container{
+    background: transparent;
+}

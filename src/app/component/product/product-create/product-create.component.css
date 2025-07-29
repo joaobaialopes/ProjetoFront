@@ -1,0 +1,87 @@
+/* Estiliza o formulário para usar um layout flexível em coluna */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Estiliza o botão com margens específicas */
+button {
+  background: linear-gradient(90deg, #8a6245 250px, #815b40); 
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.15rem;
+  color: #F5EBDD;
+  border-radius: 14px;
+  box-shadow: 0 6px 12px rgba(92, 58, 26, 0.4);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  letter-spacing: 0.03em;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+}
+
+
+/* Efeito neon ao passar o mouse */
+button:hover {
+    background: linear-gradient(90deg,#815b40 2%, #8a6245); /* Leve alteração na cor de fundo */
+    box-shadow: 0 10px 22px rgba(92, 58, 26, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Animação ao clicar */
+button:active {
+    transform: scale(0.95); /* Reduz ligeiramente o tamanho do botão */
+}
+
+
+mat-card {
+    max-width: 600px; /* Limita a largura do cartão */
+    margin: 80px auto; /* Centraliza o cartão na página */
+    padding: 20px; /* Adiciona um pouco de espaço interno */
+    box-shadow: 0 10px 22px rgba(92, 58, 26, 0.6); /* Sombra suave ao redor do cartão */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #ffffff; /* Cor de fundo do cartão */
+}
+
+mat-card-title {
+    font-size: 24px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #6b4f3a; /* Cor do título */
+    text-align: center; /* Centraliza o título */
+    font-weight: bold;
+}
+
+mat-form-field {
+    width: 100%; /* Faz os campos de formulário ocuparem toda a largura */
+    margin-bottom: 20px; /* Espaço abaixo de cada campo */
+}
+button {
+    width: 100%; /* Faz os botões ocuparem toda a largura */
+    margin-top: 10px; /* Espaço acima de cada botão */
+}
+
+.scrollable-form {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.subtitulo {
+  font-weight:470;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.linha-amarela {
+  height: 3.5px;
+  background-color: #FF9900;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 4px;
+}

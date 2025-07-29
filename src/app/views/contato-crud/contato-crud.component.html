@@ -1,0 +1,16 @@
+<main>
+<button mat-raised-button (click)="navigateToContatoCreate()" color="primary">
+    Novo Contato
+</button>
+
+<input
+    type="text"
+    [(ngModel)]="searchTerm"
+    (input)="filterContatos()"
+    placeholder="Buscar contato..."
+    class = "pesquisa"
+  />
+  
+  <app-contato-read [contato]="filteredContatos"></app-contato-read>
+
+</main>

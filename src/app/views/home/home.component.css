@@ -1,0 +1,181 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+main {
+  background: transparent;
+  min-height: 83vh;
+  padding: 40px 20px;
+  display: flex;
+  align-items: stretch;
+}
+
+.main-conteiner {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+/* Estilo do corpo da página: Define a fonte, cor de fundo e cor do texto */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: transparent;
+    /* Evita scroll horizontal, caso algum elemento esteja "vazando" */
+}
+
+.welcome-box .logo {
+    max-height: 180px;
+}
+
+.welcome-box {
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  height: 60%;
+  background: linear-gradient(90deg,#F5EBDD 0% 200px,#b9a484 100%);
+  border: 2px solid #8b744e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-box h2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #6c4400;
+  font-weight: bold;
+  font-size: 2.0rem;
+  gap: 12px; /* espaço entre texto e linhas */
+  position: relative;
+}
+
+.welcome-box h2::before,
+.welcome-box h2::after {
+  content: "";
+  flex-grow: 1;
+  height: 3px;           
+  background-color: #6c4400;
+  border-radius: 2px;     
+}
+
+.welcome-box .intro-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 16px;
+  color: #4a351f;
+  font-weight: 400;
+}
+
+/* Estilo do elemento principal: Define um gradiente de fundo, altura mínima e padding */
+main {
+    background: transparent;
+    min-height: 83vh;
+    padding: 40px 20px;
+}
+
+/* Cartões: Configuração de layout em grid para os cartões */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 6%;
+  flex: 1;
+  max-width: 33%;
+}
+
+/* Estilo individual dos cartões */
+.card {
+    background: linear-gradient(145deg, #453221 0%, #453221 150%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(75, 51, 15, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Barra decorativa na lateral dos cartões */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 100%;
+    background: linear-gradient(90deg, #e78d06, #fca31d);
+    opacity: 0.9;
+}
+
+/* Estilo do título dos cartões */
+.card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #e78d06;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo do texto dos cartões */
+.card p {
+    margin-left: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f0f0f5;
+    line-height: 1.4;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(75, 51, 15, 0.3);
+}
+
+/* Gráficos: Configuração de layout flexível para os gráficos */
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsividade: Ajustes para telas menores */
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+    }
+
+    .card p {
+        font-size: 1.3rem;
+    }
+
+    .chart {
+        flex: 1 1 100%;
+        padding: 24px;
+        min-height: 150px;
+    }
+}
