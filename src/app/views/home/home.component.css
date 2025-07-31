@@ -43,9 +43,9 @@ body {
   flex: 1;
   min-width: 300px;
   height: 60%;
-  background: linear-gradient(90deg,#F5EBDD 0% 200px,#b9a484 100%);
+  background: linear-gradient(90deg,#db9150);
   border: 2px solid #8b744e;
-  padding: 20px;
+  padding: 20x;
   border-radius: 12px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -55,7 +55,7 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: #6c4400;
+  color: #a54205;
   font-weight: bold;
   font-size: 2.0rem;
   gap: 12px; /* espaço entre texto e linhas */
@@ -67,7 +67,7 @@ body {
   content: "";
   flex-grow: 1;
   height: 3px;           
-  background-color: #6c4400;
+  background-color: #a54205;
   border-radius: 2px;     
 }
 
@@ -75,7 +75,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-top: 16px;
-  color: #4a351f;
+  color: #a54205;
   font-weight: 400;
 }
 
@@ -98,7 +98,7 @@ main {
 
 /* Estilo individual dos cartões */
 .card {
-    background: linear-gradient(145deg, #453221 0%, #453221 150%);
+    background: linear-gradient(145deg, #f5af72);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 25px rgba(75, 51, 15, 0.3);
@@ -115,7 +115,7 @@ main {
     left: 0;
     width: 15px;
     height: 100%;
-    background: linear-gradient(90deg, #e78d06, #fca31d);
+    background: linear-gradient(90deg, #a54205, #da5605);
     opacity: 0.9;
 }
 
@@ -123,7 +123,7 @@ main {
 .card h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #e78d06;
+    color: #a54205;
     margin-bottom: 12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;

@@ -56,8 +56,8 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-top: 45px;
-  background-image: url('https://clubetaup.com.br/wp-content/uploads/2023/06/MADEIRA-27-jpg.webp');
-  background-size: 100% auto;       
+  background-size: 100% auto;   
+  background-color: white;    
   background-repeat: repeat-y;  
   background-position: top center;
   max-width: 1200px;
