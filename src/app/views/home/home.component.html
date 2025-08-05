@@ -11,20 +11,29 @@
     <main class="main-conteiner">
       <section class="cards">
         <div class="card">
-          <h3><span>🥖</span> Produtos Cadastrados </h3>
-          <p>{{ productCount }}</p>
+          <a class="card" mat-list-item routerLink="/products">
+          <h3> Total de Produtos </h3>
+          <p>Quantidade: {{ productCount }}</p>
+          </a>
         </div>
         <div class="card">
-          <h3><span>👥</span> Clientes Cadastrados</h3>
-          <p>{{ clienteCount }}</p>
+          <a class="card" mat-list-item routerLink="/clientes">
+          <h3> Total de Clientes </h3>
+          <p>Quantidade: {{ clienteCount }}</p>
+          </a>
         </div>
         <div class="card">
-          <h3><span>🤝</span> Fornecedores Cadastrados</h3>
-          <p>{{ fornecedorCount }}</p>
+          <a class="card" mat-list-item routerLink="/fornecedor">
+          <h3> Total de Fornecedores </h3>
+          <p>Quantidade: {{ fornecedorCount }}</p>
+          </a>
         </div>
         <div class="card">
-          <h3><span>💲</span> Vendas Realizadas</h3>
-          <p>{{ vendaCount }}</p>
+        <a class="card" mat-list-item routerLink="/vendas">
+          <h3> Total de Vendas </h3>
+          <p>Quantidade: {{ vendaCount }}</p>
+          <p>Total: R$ {{ vendaValorTotal | number:'1.2-2' }}</p>
+        </a>
         </div>
       </section>
       <div class="welcome-box">
@@ -33,19 +42,18 @@
         </a>
         <h2>Bem-vindo ao sistema de gestão da Padaria Baía!</h2>
         <p class="intro-text">
-          Este sistema foi criado para facilitar o seu dia a dia e tornar a gestão da padaria mais prática, ágil e
-          organizada.
-          Aqui, você pode acompanhar o desempenho do seu negócio em tempo real, controlar o cadastro de produtos,
-          gerenciar seus fornecedores e manter o relacionamento com seus clientes sempre em dia.
+          Os botões localizados ao lado esquerdo, te direciona para a aba
+          ao qual está escrito ao ser interagido.
         </p>
         <p class="intro-text">
-          Aproveite os recursos disponíveis para automatizar tarefas, reduzir erros e ganhar tempo — tudo isso com uma
-          interface simples e pensada especialmente para as necessidades de uma padaria como a nossa.
-          Se surgir alguma dúvida, você pode acessar os tutoriais ou entrar em contato com o suporte.
+          Os números a baixo significam o números de cadastros daquela classe.
         </p>
         <p class="intro-text">
-          Vamos juntos transformar cada fornada em mais eficiência, qualidade e crescimento.
-          Um excelente dia de trabalho pra você! 
+           Esse sistema serve principalmente para facilitar a sua vida, garantir que tenha
+           um negócio organizado, saudável e bem sucedido. 
+        </p>
+        <p class="intro-text">
+           Meu Telefone: (43)98800-5025
         </p>
       </div>
     </main>

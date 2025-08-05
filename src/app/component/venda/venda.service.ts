@@ -56,4 +56,13 @@ export class VendaService {
   getVendaCount(): number {
   return this._vendaCount;
   }
+  private _vendaTotal = 0;
+
+  setVendaTotal(total: number) {
+  this._vendaTotal = total;
+  }
+
+  getVendaTotal(): number {
+  return this._vendaTotal;
+  }
 }

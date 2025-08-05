@@ -31,6 +31,8 @@ export class HomeComponent implements OnInit {
   formaPagamentoCount: number = 0;
   fornecedorCount: number = 0;
   vendaCount: number = 0;
+  vendaValorTotal: number = 0;
+  
 
   ngOnInit(): void {
     this.headerService.setTitulo('Início');
@@ -56,9 +58,9 @@ export class HomeComponent implements OnInit {
       this.fornecedorCount = fornecedor.length; // Conta a quantidade de formas de pagamentos
       const count = this.fornecedorService.getfornecedorCount();
     });
-    this.vendaService.read().subscribe(venda => {
-      this.vendaCount = venda.length; // Conta a quantidade de vendas
-      const count = this.vendaService.getVendaCount();
-    });
-  }
+    this.vendaService.read().subscribe(vendas => {
+    this.vendaCount = vendas.length; // quantidade de vendas
+    this.vendaValorTotal = vendas.reduce((total, venda) => total + (venda.vendaValorTotal || 0), 0); // soma dos valores
+  });
+}
 }

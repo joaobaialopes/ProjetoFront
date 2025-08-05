@@ -1,13 +1,13 @@
 /* ==== BOTÃO "NOVO CLIENTE"  ==== */
 button {
-  background: linear-gradient(90deg, #e78d06 250px, #805412); 
+  background: linear-gradient(90deg, #a36507 250px, #a36911); 
   border: none;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1rem;
   font-size: 1.15rem;
   color: #F5EBDD;
   border-radius: 14px;
-  box-shadow: 0 6px 12px rgba(92, 58, 26, 0.4);
-  font-weight: 600;
+  box-shadow: 0 10px 12px rgba(92, 58, 26, 0.4);
+  font-weight: 800;
   cursor: pointer;
   transition: all 0.3s ease;
   flex-shrink: 0;
@@ -16,11 +16,11 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 200px;
+  width: 250px;
 }
 
 button:hover {
-  background: linear-gradient(90deg, #855814 , #e78d06); /* Inversão no hover */
+  background: linear-gradient(90deg, #ebae52 , #c77e11); /* Inversão no hover */
   box-shadow: 0 10px 22px rgba(92, 58, 26, 0.6);
   transform: translateY(-2px);
 }
@@ -29,7 +29,7 @@ button:hover {
 /* ==== CAMPO DE PESQUISA  ==== */
 .pesquisa {
   padding: 0.75rem 1.2rem;
-  border: 2px solid #e78d06; 
+  border: 5px solid #e78d06; 
   border-radius: 10px;
   background-color: #e2c395; 
   color: #5c3a1a; /* Marrom escuro */
@@ -56,8 +56,8 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-top: 45px;
-  background-size: 100% auto;   
-  background-color: white;    
+  background-color: rgb(155, 69, 20);    
+  background-size: 100% auto;       
   background-repeat: repeat-y;  
   background-position: top center;
   max-width: 1200px;

@@ -58,6 +58,7 @@ export class VendaCreateComponent implements OnInit {
       compraPrecoVenda: [0, [Validators.required, Validators.min(0)]]
     });
   }
+  
 
   addCompra(): void {
     this.compras.push(this.createCompra());
