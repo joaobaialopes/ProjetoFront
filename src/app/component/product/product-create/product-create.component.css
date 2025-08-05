@@ -2,6 +2,7 @@
 form {
     display: flex;
     flex-direction: column;
+    padding-bottom: 60px;
 }
 
 
@@ -41,25 +42,25 @@ button:active {
 
 
 mat-card {
-    max-width: 600px; /* Limita a largura do cartão */
+    max-width: 800px; /* Limita a largura do cartão */
     margin: 80px auto; /* Centraliza o cartão na página */
     padding: 20px; /* Adiciona um pouco de espaço interno */
     box-shadow: 0 10px 22px rgba(92, 58, 26, 0.6); /* Sombra suave ao redor do cartão */
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 50px; /* Bordas arredondadas */
     background-color: #e0a456; /* Cor de fundo do cartão */
 }
 
 mat-card-title {
     font-size: 24px; /* Tamanho da fonte do título */
     margin-bottom: 20px; /* Espaço abaixo do título */
-    color: #6b4f3a; /* Cor do título */
+    color: #532502; /* Cor do título */
     text-align: center; /* Centraliza o título */
     font-weight: bold;
 }
 
 mat-form-field {
     width: 100%; /* Faz os campos de formulário ocuparem toda a largura */
-    margin-bottom: 20px; /* Espaço abaixo de cada campo */
+    margin-bottom: 10px; /* Espaço abaixo de cada campo */
 }
 button {
     width: 100%; /* Faz os botões ocuparem toda a largura */
@@ -85,3 +86,4 @@ button {
   width: 100%;
   border-radius: 4px;
 }
+
