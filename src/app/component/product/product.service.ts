@@ -45,8 +45,8 @@ export class ProductService {
   }
 
   // Exclui um produto pelo ID
-  delete(proId: number): Observable<Product> {
-    const url = `${this.baseUrl}/${proId}`;
+  delete(id: number): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
     return this.http.delete<Product>(url);
   }
 
