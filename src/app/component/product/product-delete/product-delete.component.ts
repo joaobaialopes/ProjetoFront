@@ -25,10 +25,11 @@ export class ProductDeleteComponent {
     }
     this.product = product;
   });
+  
   }
 
   deleteProduct(): void {
-    this.productService.delete(this.product.proId!).subscribe(() =>{
+    this.productService.delete(this.product.proId!).subscribe(() => {
     this.productService.showMessage('Produto excluido com sucesso!')  
     this.router.navigate(['/products'])
     })
